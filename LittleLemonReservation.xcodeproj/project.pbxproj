@@ -13,7 +13,15 @@
 		DE7197052A5FF801001F7614 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE7197042A5FF801001F7614 /* Preview Assets.xcassets */; };
 		DE7197072A5FF801001F7614 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7197062A5FF801001F7614 /* Persistence.swift */; };
 		DE71970A2A5FF801001F7614 /* LittleLemonReservation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DE7197082A5FF801001F7614 /* LittleLemonReservation.xcdatamodeld */; };
-		DE7197112A5FFA41001F7614 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7197102A5FFA41001F7614 /* Home.swift */; };
+		DE7197112A5FFA41001F7614 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7197102A5FFA41001F7614 /* HomeView.swift */; };
+		DE7197132A6000C1001F7614 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7197122A6000C1001F7614 /* HeaderView.swift */; };
+		DE7197152A6000CC001F7614 /* HeroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7197142A6000CC001F7614 /* HeroView.swift */; };
+		DE7197172A6000D6001F7614 /* MenuBreakdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7197162A6000D6001F7614 /* MenuBreakdownView.swift */; };
+		DE7197192A6000E5001F7614 /* MenuItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7197182A6000E5001F7614 /* MenuItemsView.swift */; };
+		DE7197202A602390001F7614 /* Markazi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE71971F2A602372001F7614 /* Markazi.ttf */; };
+		DE7197212A602390001F7614 /* Karla.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE71971E2A60234F001F7614 /* Karla.ttf */; };
+		DE7197222A602390001F7614 /* Karla-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE71971D2A60234F001F7614 /* Karla-Italic.ttf */; };
+		DE7197252A6036C5001F7614 /* MenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7197242A6036C5001F7614 /* MenuItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +32,16 @@
 		DE7197042A5FF801001F7614 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DE7197062A5FF801001F7614 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		DE7197092A5FF801001F7614 /* LittleLemonReservation.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LittleLemonReservation.xcdatamodel; sourceTree = "<group>"; };
-		DE7197102A5FFA41001F7614 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		DE7197102A5FFA41001F7614 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		DE7197122A6000C1001F7614 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		DE7197142A6000CC001F7614 /* HeroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroView.swift; sourceTree = "<group>"; };
+		DE7197162A6000D6001F7614 /* MenuBreakdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBreakdownView.swift; sourceTree = "<group>"; };
+		DE7197182A6000E5001F7614 /* MenuItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemsView.swift; sourceTree = "<group>"; };
+		DE71971D2A60234F001F7614 /* Karla-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-Italic.ttf"; sourceTree = "<group>"; };
+		DE71971E2A60234F001F7614 /* Karla.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Karla.ttf; sourceTree = "<group>"; };
+		DE71971F2A602372001F7614 /* Markazi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Markazi.ttf; sourceTree = "<group>"; };
+		DE7197232A602529001F7614 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DE7197242A6036C5001F7614 /* MenuItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +74,10 @@
 		DE7196FC2A5FF800001F7614 /* LittleLemonReservation */ = {
 			isa = PBXGroup;
 			children = (
+				DE7197232A602529001F7614 /* Info.plist */,
 				DE7196FD2A5FF800001F7614 /* LittleLemonReservationApp.swift */,
-				DE7197102A5FFA41001F7614 /* Home.swift */,
+				DE71971C2A60231B001F7614 /* Fonts */,
+				DE71971A2A60013E001F7614 /* Views */,
 				DE7196FF2A5FF800001F7614 /* ContentView.swift */,
 				DE7197012A5FF801001F7614 /* Assets.xcassets */,
 				DE7197062A5FF801001F7614 /* Persistence.swift */,
@@ -74,6 +93,29 @@
 				DE7197042A5FF801001F7614 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DE71971A2A60013E001F7614 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DE7197102A5FFA41001F7614 /* HomeView.swift */,
+				DE7197122A6000C1001F7614 /* HeaderView.swift */,
+				DE7197142A6000CC001F7614 /* HeroView.swift */,
+				DE7197162A6000D6001F7614 /* MenuBreakdownView.swift */,
+				DE7197182A6000E5001F7614 /* MenuItemsView.swift */,
+				DE7197242A6036C5001F7614 /* MenuItemView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DE71971C2A60231B001F7614 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DE71971D2A60234F001F7614 /* Karla-Italic.ttf */,
+				DE71971E2A60234F001F7614 /* Karla.ttf */,
+				DE71971F2A602372001F7614 /* Markazi.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,7 +176,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE7197212A602390001F7614 /* Karla.ttf in Resources */,
 				DE7197052A5FF801001F7614 /* Preview Assets.xcassets in Resources */,
+				DE7197222A602390001F7614 /* Karla-Italic.ttf in Resources */,
+				DE7197202A602390001F7614 /* Markazi.ttf in Resources */,
 				DE7197022A5FF801001F7614 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,11 +191,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE7197172A6000D6001F7614 /* MenuBreakdownView.swift in Sources */,
 				DE7197072A5FF801001F7614 /* Persistence.swift in Sources */,
 				DE7197002A5FF800001F7614 /* ContentView.swift in Sources */,
-				DE7197112A5FFA41001F7614 /* Home.swift in Sources */,
+				DE7197112A5FFA41001F7614 /* HomeView.swift in Sources */,
+				DE7197252A6036C5001F7614 /* MenuItemView.swift in Sources */,
 				DE71970A2A5FF801001F7614 /* LittleLemonReservation.xcdatamodeld in Sources */,
+				DE7197152A6000CC001F7614 /* HeroView.swift in Sources */,
+				DE7197132A6000C1001F7614 /* HeaderView.swift in Sources */,
 				DE7196FE2A5FF800001F7614 /* LittleLemonReservationApp.swift in Sources */,
+				DE7197192A6000E5001F7614 /* MenuItemsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +334,7 @@
 				DEVELOPMENT_TEAM = UN7Q9L4XCH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LittleLemonReservation/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -313,6 +364,7 @@
 				DEVELOPMENT_TEAM = UN7Q9L4XCH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LittleLemonReservation/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

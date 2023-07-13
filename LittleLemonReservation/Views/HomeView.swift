@@ -1,5 +1,5 @@
 //
-//  Home.swift
+//  HomeView.swift
 //  LittleLemonReservation
 //
 //  Created by Sabino Paulicelli on 13/07/23.
@@ -7,14 +7,19 @@
 
 import SwiftUI
 
-struct Home: View {
+struct HomeView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+		VStack {
+			HeaderView()
+			HeroView()
+			MenuBreakdownView()
+			MenuItemsView()
+		}
     }
 }
 
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
-        Home()
+        HomeView()
     }
 }
