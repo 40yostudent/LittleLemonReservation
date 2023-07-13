@@ -17,12 +17,11 @@ struct MenuItemView: View {
 		HStack {
 			VStack(alignment: .leading, spacing: 8) {
 				Text(title)
-					.font(.custom("Karla", size: 16, relativeTo: .body))
-					.fontWeight(.bold)
+					.font(.custom("Karla-Bold", size: 16, relativeTo: .body))
 				Text(description)
-					.font(.custom("Karla", size: 16, relativeTo: .body))
+					.font(.custom("Karla-Regular", size: 16, relativeTo: .body))
 				Text(price, format: .currency(code: "USD"))
-					.font(.custom("Karla", size: 16, relativeTo: .body))
+					.font(.custom("Karla-Regular", size: 16, relativeTo: .body))
 			}
 			Image(systemName: "photo")
 				.resizable()

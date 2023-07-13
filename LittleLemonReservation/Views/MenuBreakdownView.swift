@@ -11,7 +11,8 @@ struct MenuBreakdownView: View {
     var body: some View {
 		VStack(alignment: .leading) {
 			Text("ORDER FOR DELIVERY!")
-				.font(.custom("Karla.ttf", size: 16, relativeTo: .body))
+				.foregroundColor(Color("TextColor"))
+				.font(.custom("Karla-Bold", size: 20, relativeTo: .body))
 				.fontWeight(.bold)
 			HStack {
 				Button("Starters") {}
@@ -37,11 +38,11 @@ internal struct Style: ViewModifier {
 	func body(content: Content) -> some View {
 		content
 			.foregroundColor(Color("TextColor"))
-			.font(.custom("Karla", size: 16, relativeTo: .body))
+			.font(.custom("Karla-Bold", size: 14, relativeTo: .body))
 			.fontWeight(.bold)
-			.padding(.horizontal, 16)
-			.padding(.vertical, 8)
+			.padding(.horizontal, 14)
+			.padding(.vertical, 7)
 			.background(Color("BackgroundColor"))
-			.cornerRadius(16)
+			.cornerRadius(14)
 	}
 }
