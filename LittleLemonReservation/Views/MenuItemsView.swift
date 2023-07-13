@@ -23,6 +23,7 @@ struct MenuItemsView: View {
 						 description: "Delicious grilled bread rubbed with garlic and topped with olive oil and salt. Our Bruschetta includes tomato and cheese.",
 					  price: 7.99)
 		}
+		.listStyle(.plain)
     }
 }
 
