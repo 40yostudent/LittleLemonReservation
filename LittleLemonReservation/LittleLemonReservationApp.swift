@@ -13,8 +13,11 @@ struct LittleLemonReservationApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+			NavigationView {
+				HomeView()
+					.environment(\.managedObjectContext, persistenceController.container.viewContext)
+					.navigationBarHidden(true)
+			}
         }
     }
 }

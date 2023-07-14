@@ -37,6 +37,7 @@
 		DE7197472A603D8B001F7614 /* MarkaziText-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE7197442A603D8A001F7614 /* MarkaziText-SemiBold.ttf */; };
 		DE7197482A603D8B001F7614 /* MarkaziText-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE7197452A603D8B001F7614 /* MarkaziText-Medium.ttf */; };
 		DE7197492A603D8B001F7614 /* MarkaziText-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE7197462A603D8B001F7614 /* MarkaziText-Bold.ttf */; };
+		DE71974C2A615B53001F7614 /* LoginInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE71974B2A615B53001F7614 /* LoginInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		DE7197442A603D8A001F7614 /* MarkaziText-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkaziText-SemiBold.ttf"; sourceTree = "<group>"; };
 		DE7197452A603D8B001F7614 /* MarkaziText-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkaziText-Medium.ttf"; sourceTree = "<group>"; };
 		DE7197462A603D8B001F7614 /* MarkaziText-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkaziText-Bold.ttf"; sourceTree = "<group>"; };
+		DE71974B2A615B53001F7614 /* LoginInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,11 +131,9 @@
 			isa = PBXGroup;
 			children = (
 				DE7197102A5FFA41001F7614 /* HomeView.swift */,
+				DE71974B2A615B53001F7614 /* LoginInfoView.swift */,
 				DE7197122A6000C1001F7614 /* HeaderView.swift */,
-				DE7197142A6000CC001F7614 /* HeroView.swift */,
-				DE7197162A6000D6001F7614 /* MenuBreakdownView.swift */,
-				DE7197182A6000E5001F7614 /* MenuItemsView.swift */,
-				DE7197242A6036C5001F7614 /* MenuItemView.swift */,
+				DE71974A2A615B12001F7614 /* HomeViewComponents */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -161,6 +161,17 @@
 				DE7197332A603D72001F7614 /* Karla-SemiBoldItalic.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		DE71974A2A615B12001F7614 /* HomeViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				DE7197142A6000CC001F7614 /* HeroView.swift */,
+				DE7197162A6000D6001F7614 /* MenuBreakdownView.swift */,
+				DE7197182A6000E5001F7614 /* MenuItemsView.swift */,
+				DE7197242A6036C5001F7614 /* MenuItemView.swift */,
+			);
+			path = HomeViewComponents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,6 +265,7 @@
 				DE7197172A6000D6001F7614 /* MenuBreakdownView.swift in Sources */,
 				DE7197072A5FF801001F7614 /* Persistence.swift in Sources */,
 				DE7197002A5FF800001F7614 /* ContentView.swift in Sources */,
+				DE71974C2A615B53001F7614 /* LoginInfoView.swift in Sources */,
 				DE7197112A5FFA41001F7614 /* HomeView.swift in Sources */,
 				DE7197252A6036C5001F7614 /* MenuItemView.swift in Sources */,
 				DE71970A2A5FF801001F7614 /* LittleLemonReservation.xcdatamodeld in Sources */,
