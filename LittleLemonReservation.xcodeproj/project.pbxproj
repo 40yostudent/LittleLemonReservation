@@ -38,6 +38,7 @@
 		DE7197482A603D8B001F7614 /* MarkaziText-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE7197452A603D8B001F7614 /* MarkaziText-Medium.ttf */; };
 		DE7197492A603D8B001F7614 /* MarkaziText-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE7197462A603D8B001F7614 /* MarkaziText-Bold.ttf */; };
 		DE71974C2A615B53001F7614 /* LoginInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE71974B2A615B53001F7614 /* LoginInfoView.swift */; };
+		DE71974E2A641C26001F7614 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE71974D2A641C26001F7614 /* MenuItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		DE7197452A603D8B001F7614 /* MarkaziText-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkaziText-Medium.ttf"; sourceTree = "<group>"; };
 		DE7197462A603D8B001F7614 /* MarkaziText-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkaziText-Bold.ttf"; sourceTree = "<group>"; };
 		DE71974B2A615B53001F7614 /* LoginInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInfoView.swift; sourceTree = "<group>"; };
+		DE71974D2A641C26001F7614 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				DE71971C2A60231B001F7614 /* Fonts */,
 				DE71971A2A60013E001F7614 /* Views */,
 				DE7196FF2A5FF800001F7614 /* ContentView.swift */,
+				DE71974D2A641C26001F7614 /* MenuItem.swift */,
 				DE7197012A5FF801001F7614 /* Assets.xcassets */,
 				DE7197062A5FF801001F7614 /* Persistence.swift */,
 				DE7197082A5FF801001F7614 /* LittleLemonReservation.xcdatamodeld */,
@@ -271,6 +274,7 @@
 				DE71970A2A5FF801001F7614 /* LittleLemonReservation.xcdatamodeld in Sources */,
 				DE7197152A6000CC001F7614 /* HeroView.swift in Sources */,
 				DE7197132A6000C1001F7614 /* HeaderView.swift in Sources */,
+				DE71974E2A641C26001F7614 /* MenuItem.swift in Sources */,
 				DE7196FE2A5FF800001F7614 /* LittleLemonReservationApp.swift in Sources */,
 				DE7197192A6000E5001F7614 /* MenuItemsView.swift in Sources */,
 			);

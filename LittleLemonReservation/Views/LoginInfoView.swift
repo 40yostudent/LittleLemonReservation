@@ -27,8 +27,14 @@ struct LoginInfoView: View {
 							.frame(maxWidth: 60, alignment: .trailing)
 						Spacer()
 						Button("Change") {}
+							.buttonStyle(.bordered)
+							.background(Color("PrimaryColor"))
+							.cornerRadius(14)
 						Spacer()
 						Button("Remove") {}
+							.buttonStyle(.bordered)
+							.border(Color("TextColor"))
+							.foregroundColor(Color("PrimaryColor"))
 						Spacer()
 					}
 				}

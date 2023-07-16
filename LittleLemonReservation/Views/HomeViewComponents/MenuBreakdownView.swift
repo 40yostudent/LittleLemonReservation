@@ -37,11 +37,10 @@ struct MenuBreakdown_Previews: PreviewProvider {
 internal struct Style: ViewModifier {
 	func body(content: Content) -> some View {
 		content
+			.buttonStyle(.bordered)
 			.foregroundColor(Color("TextColor"))
 			.font(.custom("Karla-Bold", size: 14, relativeTo: .body))
 			.fontWeight(.bold)
-			.padding(.horizontal, 14)
-			.padding(.vertical, 7)
 			.background(Color("BackgroundColor"))
 			.cornerRadius(14)
 	}
