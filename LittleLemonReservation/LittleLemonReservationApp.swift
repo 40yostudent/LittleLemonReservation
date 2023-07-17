@@ -13,10 +13,9 @@ struct LittleLemonReservationApp: App {
 
     var body: some Scene {
         WindowGroup {
-			NavigationView {
-				HomeView()
+			NavigationStack {
+				OnboardingView()
 					.environment(\.managedObjectContext, persistenceController.container.viewContext)
-					.navigationBarHidden(true)
 			}
         }
     }

@@ -39,6 +39,9 @@
 		DE7197492A603D8B001F7614 /* MarkaziText-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE7197462A603D8B001F7614 /* MarkaziText-Bold.ttf */; };
 		DE71974C2A615B53001F7614 /* LoginInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE71974B2A615B53001F7614 /* LoginInfoView.swift */; };
 		DE71974E2A641C26001F7614 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE71974D2A641C26001F7614 /* MenuItem.swift */; };
+		DE7197502A641FEC001F7614 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE71974F2A641FEC001F7614 /* OnboardingView.swift */; };
+		DE7197522A656E74001F7614 /* Step2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7197512A656E74001F7614 /* Step2.swift */; };
+		DE7197542A656EC1001F7614 /* Step3.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7197532A656EC1001F7614 /* Step3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +79,9 @@
 		DE7197462A603D8B001F7614 /* MarkaziText-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MarkaziText-Bold.ttf"; sourceTree = "<group>"; };
 		DE71974B2A615B53001F7614 /* LoginInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInfoView.swift; sourceTree = "<group>"; };
 		DE71974D2A641C26001F7614 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		DE71974F2A641FEC001F7614 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		DE7197512A656E74001F7614 /* Step2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step2.swift; sourceTree = "<group>"; };
+		DE7197532A656EC1001F7614 /* Step3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +143,7 @@
 				DE71974B2A615B53001F7614 /* LoginInfoView.swift */,
 				DE7197122A6000C1001F7614 /* HeaderView.swift */,
 				DE71974A2A615B12001F7614 /* HomeViewComponents */,
+				DE7197552A656EFC001F7614 /* UselessOnboarding */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -175,6 +182,16 @@
 				DE7197242A6036C5001F7614 /* MenuItemView.swift */,
 			);
 			path = HomeViewComponents;
+			sourceTree = "<group>";
+		};
+		DE7197552A656EFC001F7614 /* UselessOnboarding */ = {
+			isa = PBXGroup;
+			children = (
+				DE71974F2A641FEC001F7614 /* OnboardingView.swift */,
+				DE7197512A656E74001F7614 /* Step2.swift */,
+				DE7197532A656EC1001F7614 /* Step3.swift */,
+			);
+			path = UselessOnboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +284,7 @@
 			files = (
 				DE7197172A6000D6001F7614 /* MenuBreakdownView.swift in Sources */,
 				DE7197072A5FF801001F7614 /* Persistence.swift in Sources */,
+				DE7197522A656E74001F7614 /* Step2.swift in Sources */,
 				DE7197002A5FF800001F7614 /* ContentView.swift in Sources */,
 				DE71974C2A615B53001F7614 /* LoginInfoView.swift in Sources */,
 				DE7197112A5FFA41001F7614 /* HomeView.swift in Sources */,
@@ -276,7 +294,9 @@
 				DE7197132A6000C1001F7614 /* HeaderView.swift in Sources */,
 				DE71974E2A641C26001F7614 /* MenuItem.swift in Sources */,
 				DE7196FE2A5FF800001F7614 /* LittleLemonReservationApp.swift in Sources */,
+				DE7197502A641FEC001F7614 /* OnboardingView.swift in Sources */,
 				DE7197192A6000E5001F7614 /* MenuItemsView.swift in Sources */,
+				DE7197542A656EC1001F7614 /* Step3.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
