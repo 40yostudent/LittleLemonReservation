@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Step2: View {
 	
-	@State private var textField = ""
+	@AppStorage("email") private var textField = ""
 	
 	@State private var buttonPressed = false
 	
@@ -25,7 +25,6 @@ struct Step2: View {
 				.padding()
 			Button("next") {
 				self.buttonPressed = true
-				// TODO: save email
 			}
 			.buttonStyle(.borderedProminent)
 			.navigationTitle("Step2")

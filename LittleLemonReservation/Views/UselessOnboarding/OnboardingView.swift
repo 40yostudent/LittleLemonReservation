@@ -9,8 +9,8 @@ import SwiftUI
 
 struct OnboardingView: View {
 	
-	@State private var textField = ""
-	@State private var textField2 = ""
+	@AppStorage("name") private var textField = ""
+	@AppStorage("surname") private var textField2 = ""
 	
 	@State private var buttonPressed = false
 	
@@ -28,7 +28,6 @@ struct OnboardingView: View {
 				.padding()
 			Button("next") {
 				self.buttonPressed = true
-				// TODO: save name and surname info
 			}
 			.buttonStyle(.borderedProminent)
 			.navigationTitle("Step1")
