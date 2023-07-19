@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct LittleLemonReservationApp: App {
 	
-	@AppStorage("name", store: .standard) var name: String?
+	@AppStorage("name", store: .standard) private var name: String?
 	
     let persistenceController = PersistenceController.shared
 	
