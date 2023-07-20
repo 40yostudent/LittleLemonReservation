@@ -18,7 +18,6 @@ struct LittleLemonReservationApp: App {
         WindowGroup {
 			NavigationStack {
 				if (login == nil) {
-					//LoginInfoView()
 					OnboardingView()
 						.environment(\.managedObjectContext, persistenceController.container.viewContext)
 				} else {

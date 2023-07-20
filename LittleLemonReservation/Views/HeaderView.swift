@@ -21,7 +21,7 @@ struct HeaderView: View {
 				.aspectRatio(contentMode: .fit)
 				.frame(maxWidth: .infinity, alignment: .center)
 			
-			if (login != nil || login != false) {
+			if (login != nil) {
 				Button {
 					goToLogin = true
 				} label: {
@@ -35,6 +35,8 @@ struct HeaderView: View {
 				Button("login") {
 					goToLogin = true
 				}
+				.frame(maxWidth: .infinity, alignment: .trailing)
+				.padding(.horizontal)
 			}
 		}
 		.frame(width: 375, height: 60)

@@ -10,11 +10,15 @@ import SwiftUI
 struct LoginInfoView: View {
 	
 	@AppStorage("login") private var login: Bool?
+	@AppStorage("name") private var name: String?
+	@AppStorage("surname") private var surname: String?
+	@AppStorage("email") private var email: String?
+	@AppStorage("phone") private var phone: String?
 	
-	@State var firstName = ""
-	@State var lastName = ""
-	@State var email = ""
-	@State var phoneNumber = ""
+	@State var nameField = ""
+	@State var surnameField = ""
+	@State var emailField = ""
+	@State var phoneNumberField = ""
 	@State var isChecked = true
 	
     var body: some View {
@@ -41,16 +45,16 @@ struct LoginInfoView: View {
 					}
 				}
 				Section("First Name") {
-					TextField("Tilly", text: $firstName)
+					TextField("first name", text: $nameField)
 				}
 				Section("Last Name") {
-					TextField("Doe", text: $lastName)
+					TextField("last name", text: $surnameField)
 				}
 				Section("email") {
-					TextField("tillydoe@example.com", text: $email)
+					TextField("email", text: $emailField)
 				}
 				Section("Phone Number") {
-					TextField("(217) 555-0113", text: $phoneNumber)
+					TextField("phone number", text: $phoneNumberField)
 				}
 				Section("Email notifications") {
 					Toggle(isOn: $isChecked) {
@@ -77,12 +81,25 @@ struct LoginInfoView: View {
 				}
 				Section {
 					HStack {
-						Button("Discard changes") {}
+						Button("Discard changes") {
+							nameField = ""
+							surnameField = ""
+							emailField = ""
+							phoneNumberField = ""
+							isChecked = false
+						}
 						Spacer()
-						Button("Save changes") {}
+						Button("Save changes") {
+							name = nameField
+							surname = surnameField
+							email = emailField
+							phone = phoneNumberField
+							login = true
+						}
 					}
 				}
-			}.listStyle(.insetGrouped)
+			}
+			.listStyle(.insetGrouped)
 		}
     }
 }
