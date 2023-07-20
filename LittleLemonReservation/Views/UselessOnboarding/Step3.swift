@@ -10,6 +10,7 @@ import SwiftUI
 struct Step3: View {
 	
 	@AppStorage("phone") private var textField = ""
+	@AppStorage("login") private var login: Bool?
 	
 	@State private var buttonPressed = false
 	
@@ -24,7 +25,8 @@ struct Step3: View {
 			TextField("telephone", text: $textField)
 				.padding()
 			Button("next") {
-				self.buttonPressed = true
+				login = true
+				buttonPressed = true
 			}
 			.buttonStyle(.borderedProminent)
 			.navigationTitle("Step3")

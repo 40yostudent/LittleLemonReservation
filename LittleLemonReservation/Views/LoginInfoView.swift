@@ -9,6 +9,8 @@ import SwiftUI
 
 struct LoginInfoView: View {
 	
+	@AppStorage("login") private var login: Bool?
+	
 	@State var firstName = ""
 	@State var lastName = ""
 	@State var email = ""
@@ -67,7 +69,9 @@ struct LoginInfoView: View {
 				Section {
 					HStack {
 						Spacer()
-						Button("Log out") {}
+						Button("Log out") {
+							login = nil
+						}
 						Spacer()
 					}
 				}

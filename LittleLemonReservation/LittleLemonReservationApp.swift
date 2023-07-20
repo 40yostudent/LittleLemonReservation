@@ -10,18 +10,19 @@ import SwiftUI
 @main
 struct LittleLemonReservationApp: App {
 	
-	@AppStorage("name", store: .standard) private var name: String?
+	@AppStorage("login") private var login: Bool?
 	
     let persistenceController = PersistenceController.shared
 	
     var body: some Scene {
         WindowGroup {
 			NavigationStack {
-				if (name != nil) {
-					HomeView()
+				if (login == nil) {
+					//LoginInfoView()
+					OnboardingView()
 						.environment(\.managedObjectContext, persistenceController.container.viewContext)
 				} else {
-					OnboardingView()
+					HomeView()
 						.environment(\.managedObjectContext, persistenceController.container.viewContext)
 				}
 			}

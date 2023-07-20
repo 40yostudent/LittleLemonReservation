@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct HeaderView: View {
+	
+	@AppStorage("login") private var login: Bool?
+	
+	@State private var goToLogin = false
+	
     var body: some View {
 		HStack {
 			Spacer().frame(maxWidth: .infinity, alignment: .trailing)
@@ -15,12 +20,27 @@ struct HeaderView: View {
 				.resizable()
 				.aspectRatio(contentMode: .fit)
 				.frame(maxWidth: .infinity, alignment: .center)
-			Image("profile-pic")
-				.resizable()
-				.aspectRatio(CGSize(width: 60, height: 60), contentMode: .fit)
-				.frame(maxWidth: .infinity, alignment: .trailing)
-				.padding(.horizontal)
-		}.frame(width: 375, height: 60)
+			
+			if (login != nil || login != false) {
+				Button {
+					goToLogin = true
+				} label: {
+					Image("profile-pic")
+						.resizable()
+						.aspectRatio(CGSize(width: 60, height: 60), contentMode: .fit)
+						.frame(maxWidth: .infinity, alignment: .trailing)
+						.padding(.horizontal)
+				}
+			} else {
+				Button("login") {
+					goToLogin = true
+				}
+			}
+		}
+		.frame(width: 375, height: 60)
+		.navigationDestination(isPresented: $goToLogin) {
+			LoginInfoView()
+		}
     }
 }
 
