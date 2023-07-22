@@ -21,14 +21,11 @@ struct MenuItemsView: View {
     var body: some View {
 		FetchedObjects(predicate: buildPredicate(),
 					   sortDescriptors: buildSortDescriptors()) {
-			(dishes: [MenuItem]) in
-			List(dishes) { dish in
-				MenuItemView(title: dish.name ?? "name",
-							 description: dish.summary ?? "summary",
-							 price: dish.price)
-//				NavigationLink("gg") {
-//					Text("dish.name!")
-//				}
+			(rowItems: [MenuItem]) in
+			List(rowItems) { rowItem in
+				MenuItemView(title: rowItem.name ?? "name",
+							 description: rowItem.summary ?? "summary",
+							 price: rowItem.price)
 			}
 			.listStyle(.plain)
 			.onAppear {
