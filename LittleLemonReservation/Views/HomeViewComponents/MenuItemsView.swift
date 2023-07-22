@@ -25,7 +25,8 @@ struct MenuItemsView: View {
 			List(rowItems) { rowItem in
 				MenuItemView(title: rowItem.name ?? "name",
 							 description: rowItem.summary ?? "summary",
-							 price: rowItem.price)
+							 price: rowItem.price,
+							 imageURL: URL(string: "https://github.com/Meta-Mobile-Developer-PC/Working-With-Data-API/blob/main/images/" + rowItem.image! + "?raw=true")!)
 			}
 			.listStyle(.plain)
 			.onAppear {

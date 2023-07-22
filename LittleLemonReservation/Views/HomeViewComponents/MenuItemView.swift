@@ -12,6 +12,7 @@ struct MenuItemView: View {
 	let title: String
 	let description: String
 	let price: Double
+	let imageURL: URL
 	
 	var body: some View {
 		HStack {
@@ -23,11 +24,16 @@ struct MenuItemView: View {
 				Text(price, format: .currency(code: "USD"))
 					.font(.custom("Karla-Regular", size: 16, relativeTo: .body))
 			}
-			Image(systemName: "photo")
-				.resizable()
-				.aspectRatio(CGSize(width: 60, height: 60), contentMode: .fit)
-				.frame(maxWidth: 90, alignment: .trailing)
-				.padding(.horizontal)
+			AsyncImage(url: imageURL) { image in
+				image
+					.resizable()
+					.aspectRatio(contentMode: .fill)
+					.padding(.horizontal)
+			} placeholder: {
+				ProgressView()
+			}
+			.frame(maxWidth: 90, maxHeight: 90)
+			.clipShape(Rectangle())
 		}.frame(width: 375, height: 160)
 	}
 }
@@ -36,7 +42,8 @@ struct MenuItemView_Previews: PreviewProvider {
     static var previews: some View {
 		MenuItemView(title: "Bruschetta",
 					 description: "Delicious grilled bread rubbed with garlic and topped with olive oil and salt. Our Bruschetta includes tomato and cheese.",
-					 price: 7.99)
+					 price: 7.99,
+					 imageURL: URL(string: "https://github.com/Meta-Mobile-Developer-PC/Working-With-Data-API/blob/main/images/pasta.jpg?raw=true")!)
 			.previewLayout(.sizeThatFits)
 			.previewDevice(.none)
 			.frame(width: 375, height: 160)
