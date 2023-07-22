@@ -8,23 +8,55 @@
 import SwiftUI
 
 struct MenuItemsView: View {
+		
+	@State var startersIsEnabled = true
+	@State var mainsIsEnabled = true
+	@State var dessertsIsEnabled = true
+	@State var drinksIsEnabled = true
+	
+	@State var searchText = ""
+	
+	@State var loaded = false
+	
     var body: some View {
-		List {
-			MenuItemView(title: "Bruschetta",
-						 description: "Delicious grilled bread rubbed with garlic and topped with olive oil and salt. Our Bruschetta includes tomato and cheese.",
-					  price: 7.99)
-			MenuItemView(title: "Bruschetta",
-						 description: "Delicious grilled bread rubbed with garlic and topped with olive oil and salt. Our Bruschetta includes tomato and cheese.",
-					  price: 7.99)
-			MenuItemView(title: "Bruschetta",
-						 description: "Delicious grilled bread rubbed with garlic and topped with olive oil and salt. Our Bruschetta includes tomato and cheese.",
-					  price: 7.99)
-			MenuItemView(title: "Bruschetta",
-						 description: "Delicious grilled bread rubbed with garlic and topped with olive oil and salt. Our Bruschetta includes tomato and cheese.",
-					  price: 7.99)
+		FetchedObjects(predicate: buildPredicate(),
+					   sortDescriptors: buildSortDescriptors()) {
+			(dishes: [MenuItem]) in
+			List(dishes) { dish in
+				MenuItemView(title: dish.name ?? "name",
+							 description: dish.summary ?? "summary",
+							 price: dish.price)
+//				NavigationLink("gg") {
+//					Text("dish.name!")
+//				}
+			}
+			.listStyle(.plain)
+			.onAppear {
+				if !loaded {
+					MenuItemListJSON.getMenuData()
+					loaded = true
+				}
+			}
 		}
-		.listStyle(.plain)
-    }
+	}
+	
+	func buildSortDescriptors() -> [NSSortDescriptor] {
+		return [NSSortDescriptor(key: "name",
+								  ascending: true,
+								  selector:
+									#selector(NSString.localizedStandardCompare))]
+	}
+	
+	func buildPredicate() -> NSCompoundPredicate {
+		let search = searchText == "" ? NSPredicate(value: true) : NSPredicate(format: "title CONTAINS[cd] %@", searchText)
+		let starters = !startersIsEnabled ? NSPredicate(format: "category != %@", "starters") : NSPredicate(value: true)
+		let mains = !mainsIsEnabled ? NSPredicate(format: "category != %@", "mains") : NSPredicate(value: true)
+		let desserts = !dessertsIsEnabled ? NSPredicate(format: "category != %@", "desserts") : NSPredicate(value: true)
+		let drinks = !drinksIsEnabled ? NSPredicate(format: "category != %@", "drinks") : NSPredicate(value: true)
+
+		let compoundPredicate = NSCompoundPredicate(andPredicateWithSubpredicates: [search, starters, mains, desserts, drinks])
+		return compoundPredicate
+	}
 }
 
 struct MenuItems_Previews: PreviewProvider {

@@ -11,7 +11,7 @@ struct MenuItemView: View {
 	
 	let title: String
 	let description: String
-	let price: Float
+	let price: Double
 	
 	var body: some View {
 		HStack {

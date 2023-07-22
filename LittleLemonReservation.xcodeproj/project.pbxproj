@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE649E942A6A654E007522E8 /* FetchedObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE649E932A6A654E007522E8 /* FetchedObjects.swift */; };
 		DE7196FE2A5FF800001F7614 /* LittleLemonReservationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7196FD2A5FF800001F7614 /* LittleLemonReservationApp.swift */; };
 		DE7197002A5FF800001F7614 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7196FF2A5FF800001F7614 /* ContentView.swift */; };
 		DE7197022A5FF801001F7614 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE7197012A5FF801001F7614 /* Assets.xcassets */; };
@@ -45,6 +46,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE2C66A62A6A71FF008F38FE /* LittleLemonReservation 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "LittleLemonReservation 2.xcdatamodel"; sourceTree = "<group>"; };
+		DE649E932A6A654E007522E8 /* FetchedObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchedObjects.swift; sourceTree = "<group>"; };
 		DE7196FA2A5FF800001F7614 /* LittleLemonReservation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittleLemonReservation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE7196FD2A5FF800001F7614 /* LittleLemonReservationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LittleLemonReservationApp.swift; sourceTree = "<group>"; };
 		DE7196FF2A5FF800001F7614 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -120,6 +123,7 @@
 				DE71971A2A60013E001F7614 /* Views */,
 				DE7196FF2A5FF800001F7614 /* ContentView.swift */,
 				DE71974D2A641C26001F7614 /* MenuItem.swift */,
+				DE649E932A6A654E007522E8 /* FetchedObjects.swift */,
 				DE7197012A5FF801001F7614 /* Assets.xcassets */,
 				DE7197062A5FF801001F7614 /* Persistence.swift */,
 				DE7197082A5FF801001F7614 /* LittleLemonReservation.xcdatamodeld */,
@@ -294,6 +298,7 @@
 				DE7197132A6000C1001F7614 /* HeaderView.swift in Sources */,
 				DE71974E2A641C26001F7614 /* MenuItem.swift in Sources */,
 				DE7196FE2A5FF800001F7614 /* LittleLemonReservationApp.swift in Sources */,
+				DE649E942A6A654E007522E8 /* FetchedObjects.swift in Sources */,
 				DE7197502A641FEC001F7614 /* OnboardingView.swift in Sources */,
 				DE7197192A6000E5001F7614 /* MenuItemsView.swift in Sources */,
 				DE7197542A656EC1001F7614 /* Step3.swift in Sources */,
@@ -506,6 +511,7 @@
 		DE7197082A5FF801001F7614 /* LittleLemonReservation.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				DE2C66A62A6A71FF008F38FE /* LittleLemonReservation 2.xcdatamodel */,
 				DE7197092A5FF801001F7614 /* LittleLemonReservation.xcdatamodel */,
 			);
 			currentVersion = DE7197092A5FF801001F7614 /* LittleLemonReservation.xcdatamodel */;
